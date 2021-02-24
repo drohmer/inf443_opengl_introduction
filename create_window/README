@@ -1,0 +1,32 @@
+= Reminder to compile in command line (Linux/MacOS only)
+
+Let us suppose you have a command line opened in the directory of the Makefile
+
+== (1) Using Makefile
+
+$ make
+$ ./pgm
+
+== (2) Using CMake (in command line)
+
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+$ cd ..
+$ build/pgm
+
+(note: the build directory is temporary and can be removed safely)
+
+== (3) Using meson (+ninja)
+
+$ meson build
+$ cd build
+$ ninja
+$ cd..
+$ build/pgm
+
+(note: the build directory is temporary and can be removed safely)
+
+
+

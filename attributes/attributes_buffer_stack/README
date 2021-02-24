@@ -1,0 +1,40 @@
+= Reminder to compile using compiling tools
+
+
+Let us suppose you have a command line opened in the directory of the Makefile
+
+== (1) Using Makefile
+
+$ make
+$ ./pgm
+
+== (2) Using CMake (in command line)
+
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+$ cd ..
+$ build/pgm
+
+(note: the build directory is temporary and can be removed safely)
+
+== (3) Using meson (+ninja)
+
+$ meson build
+$ cd build
+$ ninja
+$ cd..
+$ build/pgm
+
+(note: the build directory is temporary and can be removed safely)
+
+== (4) Using CMake (with QtCreator)
+
+$ qtcreator CMakeLists.txt &
+
+Then follow the configuration steps from the GUI.
+
+By default, a temporary directory build-cmake-Desktop-Default is created (in the parent directory of CMakeLists.txt file), as well as a file CMakeLists.txt.user (same directory than CMakeLists.txt file). Both can be removed safely.
+
+
