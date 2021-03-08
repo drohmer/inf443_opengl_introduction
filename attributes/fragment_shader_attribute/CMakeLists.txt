@@ -1,5 +1,5 @@
 
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.1)
 project(pgm)
 
 add_definitions(-DIMGUI_IMPL_OPENGL_LOADER_GLAD)
